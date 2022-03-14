@@ -1,4 +1,4 @@
-const DB = require('../dB/config');
+const DB = require('../db/config');
 const db = new DB();
 
 const postSubject = async (req, res) => {

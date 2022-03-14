@@ -39,12 +39,8 @@ submit.addEventListener('click', (e) => {
     };
 
     $.ajax(settings).done(function (response) {
-        try {
-            alert(response.message);
-        } catch {
-            alert('Error');
-            console.log(response);
-        }
+        
+        alert(response.message);
 
         document.querySelector('#name').value = '';
         document.querySelector('#code').value = '';
