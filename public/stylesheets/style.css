@@ -1,0 +1,12 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.form{
+  /*centrar form en el centro vertical y horizontalmente*/
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px;
+  border-radius: 5px;
+}
