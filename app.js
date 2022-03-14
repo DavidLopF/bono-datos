@@ -9,8 +9,8 @@ const hbs = require('express-handlebars');
 
 var app = express();
 
-const subjectRouter = require('./routes/subject');
-const departmentRouter = require('./routes/deparment');
+const subjectRouter = require('./src/routes/subject');
+const departmentRouter = require('./src/routes/deparment');
 
 
 
@@ -18,7 +18,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join('./src/public')));
 
 
 
