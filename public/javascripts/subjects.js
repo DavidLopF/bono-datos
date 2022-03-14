@@ -9,7 +9,7 @@ var settings = {
     "timeout": 0,
 };
 
-$.ajax(settings).done(function (response) {
+$.ajax(settings).done(function (response) { 
     response.forEach(element => {
         select.innerHTML += `<option value="${element.departmentid}">${element.name}</option>`;
     });
