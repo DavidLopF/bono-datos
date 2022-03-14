@@ -6,10 +6,16 @@ Antes de hacer estos pasos debes importar la base de datos sala en postgresql
           
           npm install 
 
-2. Seguido de esto debemos modificar el usuario de la base de datos, esto lo hacemos desde el archivo .env
+2. Seguido de esto debemos crear archivo .env que va a tener la siguiente estructura:
 
-           DB_USER=tuUsuario
-           DB_PASS=tuPass
+          PORT=5000
+
+          DB_USER=postgres
+          DB_PASS=admin
+          DB_HOST=localhost
+          DB_PORT=5432
+          DB_NAME=sala
+          
            
 Por ultimo correr npm start lo que levantara el servidor en el puerto 5000
 
